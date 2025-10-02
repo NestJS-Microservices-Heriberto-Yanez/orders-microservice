@@ -1,4 +1,4 @@
-
+import { OrderStatus } from "generated/prisma";
 
 export interface OrderWithProducts {
     OrderItem: {
@@ -12,7 +12,7 @@ export interface OrderWithProducts {
     totalItems: number;
     status: OrderStatus;
     paid: boolean;
-    paidAt: Date;
+    paidAt: Date | null;
     createdAt: Date;
     updatedAt: Date;
 }
